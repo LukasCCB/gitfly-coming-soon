@@ -22,61 +22,62 @@
     <link rel="stylesheet" id="css-main" href="assets/css/dashmix.min.css">
 
     <style>
-   	 html {
-		--duracao-animacao: 1s;
-		--tamanho-logo: 350px;
-		--src-logo: url(logo_git_frames_animado.svg);
-	}
+        html {
+            --duracao-animacao: 1s;
+            --tamanho-logo: 150px;
+            --src-logo: url(logo_git_frames_animado.svg);
+        }
+
         .logo-git-asas {
-			width: var(--tamanho-logo);
-			height: var(--tamanho-logo);
-			display: inline-block;
-			background-image: var(--src-logo);
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
+            width: var(--tamanho-logo);
+            height: var(--tamanho-logo);
+            display: inline-block;
+            background-image: var(--src-logo);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
-		.logo-git-asas.animado {
-			animation: var(--duracao-animacao) infinite animacao-git-asas;
-			animation-timing-function: step-start;
-			animation-direction: alternate-reverse;
+        .logo-git-asas.animado {
+            animation: var(--duracao-animacao) infinite animacao-git-asas;
+            animation-timing-function: step-start;
+            animation-direction: alternate-reverse;
 
-		}
+        }
 
-		@keyframes animacao-git-asas {
-			from {
-				background-position: 0px 0px;
-			}
+        @keyframes animacao-git-asas {
+            from {
+                background-position: 0px 0px;
+            }
 
-			10% {
-				background-position: calc(-1 * var(--tamanho-logo)) top;
-			}
+            10% {
+                background-position: calc(-1 * var(--tamanho-logo)) top;
+            }
 
-			20% {
-				background-position: calc(-2 * var(--tamanho-logo)) top;
-			}
+            20% {
+                background-position: calc(-2 * var(--tamanho-logo)) top;
+            }
 
-			30% {
-				background-position: calc(-3 * var(--tamanho-logo)) top;
-			}
+            30% {
+                background-position: calc(-3 * var(--tamanho-logo)) top;
+            }
 
-			40% {
-				background-position: calc(-4 * var(--tamanho-logo)) top;
-			}
+            40% {
+                background-position: calc(-4 * var(--tamanho-logo)) top;
+            }
 
-			50% {
-				background-position: calc(-5 * var(--tamanho-logo)) top;
-			}
+            50% {
+                background-position: calc(-5 * var(--tamanho-logo)) top;
+            }
 
-			60% {
-				background-position: calc(-6 * var(--tamanho-logo)) top;
-			}
+            60% {
+                background-position: calc(-6 * var(--tamanho-logo)) top;
+            }
 
-			to {
-				background-position: calc(-6 * var(--tamanho-logo)) top;
-			}
-		  }
-	</style>
+            to {
+                background-position: calc(-6 * var(--tamanho-logo)) top;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -91,8 +92,10 @@
                             <div class="col-md-6 py-5 text-center">
                                 <div class="push">
                                     <a class="link-fx fw-bold fs-1" href="/">
-                                        <div class="logo-git-asas animado"></div>
-                                        <span class="text-white">Git</span><span class="text-primary">Fly</span>
+                                        <div class="logo-git-asas animado">
+                                            <span class="text-white">Git</span><span class="text-primary">Fly</span>
+                                        </div>
+
                                     </a>
                                     <p class="text-uppercase fw-bold fs-sm text-white-75">Coming Soon</p>
                                 </div>
